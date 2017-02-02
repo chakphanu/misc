@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Drop Down menu เลือกจังหวัด, อำเภอ, ตำบล ของประเทศไทย</title>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/thaiaddress.js"></script>
+    </head>
+    <body>
+        <p>Credit data from: <a href="http://www.itangmo.com/%E0%B8%AA%E0%B8%AD%E0%B8%99%E0%B8%97%E0%B8%B3%E0%B9%80%E0%B8%A7%E0%B9%87%E0%B8%9A%E0%B9%84%E0%B8%8B%E0%B8%95%E0%B9%8C/drop-down-menu-%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94-%E0%B8%AD%E0%B8%B3%E0%B9%80%E0%B8%A0%E0%B8%AD-%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5-%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B9%84%E0%B8%97%E0%B8%A2.html">itangmo.com</a></p>
+        <h3>Drop Down menu เลือกจังหวัด, อำเภอ, ตำบล ของประเทศไทย</h3>
+        <form name="form" method="post" action="echo.php">
+            <p>
+                จังหวัด :
+                <span>
+                    <select name="province" id="province">
+                        <option value="0">- เลือกจังหวัด -</option>
+                    </select>
+                </span>
+            </p>
+            <p>
+                อำเภอ :
+                <span>
+                    <select name="amphur" id="amphur">
+                        <option value='0'>- เลือกอำเภอ -</option>
+                    </select>
+                </span>
+            </p>
+            <p>
+                ตำบล :
+                <span>
+                    <select name="district" id="district">
+                        <option value='0'>- เลือกตำบล -</option>
+                    </select>
+                </span>
+            </p>
+            <input type="submit" name="Submit" value="ตกลง"> <INPUT type="reset" value="ยกเลิก">
+        </form>
+
+
+      </body>
+</html>
